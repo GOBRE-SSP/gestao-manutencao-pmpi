@@ -32,12 +32,10 @@
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: var(--sans); background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; }
-
 .header { background: var(--accent); color: #fff; padding: 0 28px; display: flex; align-items: center; gap: 16px; height: 56px; border-bottom: 2px solid #0f2844; }
 .header-logo { width: 34px; height: 34px; background: rgba(255,255,255,.15); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; font-weight: 500; color: #fff; flex-shrink: 0; }
 .header-title { font-size: 14px; font-weight: 600; letter-spacing: .01em; }
 .header-sub { font-size: 11px; color: rgba(255,255,255,.6); margin-top: 1px; }
-
 .layout { display: flex; min-height: calc(100vh - 56px); }
 .sidebar { width: 210px; flex-shrink: 0; background: var(--surface); border-right: 1px solid var(--border); padding: 16px 0; }
 .sidebar-section { font-size: 10px; font-weight: 600; color: var(--text-3); letter-spacing: .08em; text-transform: uppercase; padding: 12px 16px 6px; }
@@ -45,32 +43,27 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); min-
 .nav-item:hover { background: var(--bg); color: var(--text); }
 .nav-item.active { color: var(--accent); background: var(--accent-light); border-left-color: var(--accent); font-weight: 500; }
 .nav-item svg { width: 16px; height: 16px; flex-shrink: 0; }
-
 .main { flex: 1; overflow: auto; }
 .page { display: none; padding: 24px 28px; }
 .page.active { display: block; }
 .page-title { font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
 .page-sub { font-size: 12px; color: var(--text-3); margin-bottom: 20px; }
-
 .summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
 .sum-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 14px 16px; }
 .sum-lbl { font-size: 11px; color: var(--text-3); font-weight: 500; text-transform: uppercase; letter-spacing: .04em; }
 .sum-val { font-size: 17px; font-weight: 600; color: var(--text); margin-top: 5px; font-family: var(--mono); }
 .sum-val.neg { color: var(--red); }
 .sum-val.warn { color: var(--amber); }
-
 .toolbar { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
 .toolbar input, .toolbar select { font-family: var(--sans); font-size: 13px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text); padding: 7px 12px; height: 34px; outline: none; transition: border-color .15s; }
 .toolbar input:focus, .toolbar select:focus { border-color: var(--accent); }
 .toolbar input { width: 220px; }
 .tb-count { font-size: 12px; color: var(--text-3); font-family: var(--mono); margin-left: auto; }
-
 .btn { display: inline-flex; align-items: center; gap: 6px; font-family: var(--sans); font-size: 13px; font-weight: 500; padding: 7px 14px; border-radius: var(--radius); cursor: pointer; border: 1px solid var(--border); background: var(--surface); color: var(--text); height: 34px; transition: all .12s; text-decoration: none; }
 .btn:hover { border-color: var(--border-strong); background: var(--bg); }
 .btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
 .btn-primary:hover { background: #163561; border-color: #163561; }
 .btn svg { width: 14px; height: 14px; }
-
 .contracts { display: flex; flex-direction: column; gap: 6px; }
 .contract { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
 .contract:hover { border-color: var(--border-strong); }
@@ -91,7 +84,6 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); min-
 .b-and { background: var(--blue-bg); color: var(--blue); }
 .b-sem { background: var(--amber-bg); color: var(--amber); }
 .b-sus { background: var(--red-bg); color: var(--red); }
-
 .c-body { display: none; border-top: 1px solid var(--border); }
 .expanded .c-body { display: block; }
 .med-table { width: 100%; border-collapse: collapse; font-size: 12px; }
@@ -106,11 +98,9 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); min-
 .p-pen { background: var(--amber-bg); color: var(--amber); }
 .p-nao { background: var(--red-bg); color: var(--red); }
 .p-ag { background: var(--blue-bg); color: var(--blue); }
-
 .add-row { display: flex; align-items: center; gap: 6px; padding: 9px 16px; font-size: 12px; color: var(--accent); cursor: pointer; font-weight: 500; background: var(--accent-light); transition: background .12s; }
 .add-row:hover { background: #d6e0f0; }
 .add-row svg { width: 13px; height: 13px; }
-
 .modal-backdrop { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 100; align-items: center; justify-content: center; }
 .modal-backdrop.open { display: flex; }
 .modal { background: var(--surface); border-radius: var(--radius-lg); border: 1px solid var(--border-strong); padding: 24px; width: 480px; max-width: 95vw; }
@@ -123,25 +113,18 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); min-
 .form-input { font-family: var(--sans); font-size: 13px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); color: var(--text); padding: 8px 10px; outline: none; transition: border-color .15s; }
 .form-input:focus { border-color: var(--accent); background: var(--surface); }
 .modal-footer { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
-
 .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
 .chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 16px; }
 .chart-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
 .chart-sub { font-size: 11px; color: var(--text-3); margin-bottom: 14px; }
-
 .table-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
 .table-header { padding: 14px 16px; border-bottom: 1px solid var(--border); }
 .gen-table { width: 100%; border-collapse: collapse; font-size: 12px; }
 .gen-table th { background: var(--bg); color: var(--text-3); font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 8px 14px; text-align: left; border-bottom: 1px solid var(--border); }
 .gen-table td { padding: 9px 14px; border-bottom: 1px solid var(--border); color: var(--text); }
 .gen-table tr:last-child td { border-bottom: none; }
-
 .export-toast { position: fixed; bottom: 20px; right: 20px; background: var(--text); color: #fff; font-size: 12px; padding: 10px 16px; border-radius: var(--radius); opacity: 0; transition: opacity .3s; pointer-events: none; z-index: 200; }
 .export-toast.show { opacity: 1; }
-
-.editable-val { cursor: pointer; border-bottom: 1px dashed var(--border-strong); transition: color .12s; }
-.editable-val:hover { color: var(--accent) !important; border-bottom-color: var(--accent); }
-.inline-edit-input { font-family: var(--mono); font-size: 12px; border: 1px solid var(--accent); border-radius: var(--radius); padding: 2px 6px; background: var(--surface); color: var(--text); outline: none; width: 140px; }
 </style>
 </head>
 <body>
@@ -217,7 +200,7 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); min-
       <div class="charts-grid">
         <div class="chart-card">
           <div class="chart-title">Obras por status</div>
-          <div class="chart-sub">Distribuição das unidades — com nº de obras</div>
+          <div class="chart-sub">Distribuição das unidades</div>
           <div style="position:relative;height:240px"><canvas id="chart-status"></canvas></div>
         </div>
         <div class="chart-card">
@@ -234,7 +217,6 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); min-
       <div class="table-card">
         <div class="table-header">
           <div class="chart-title">Medições pendentes</div>
-          <div class="chart-sub">Medições registradas sem OB confirmada ou sem valor medido</div>
         </div>
         <table class="gen-table">
           <thead><tr>
@@ -264,6 +246,8 @@ body { font-family: var(--sans); background: var(--bg); color: var(--text); min-
 <div class="export-toast" id="toast">CSV exportado com sucesso!</div>
 
 <script>
+const OBRAS_INICIAL = [{"id": 1, "nome": "BANHEIRO QCG", "processo": "00028.028822/2022-61", "contrato": "279/2022", "ano": 2022, "vigencia": "10/2022", "orcamento": 68285.92, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª E ÚNICA MEDIÇÃO", "medido": 68285.92, "ob": "OB 14/11/2022", "pago": "SIM"}]}, {"id": 2, "nome": "SALA DPL", "processo": "00028.020271/2022-97", "contrato": "03 2022/2022", "ano": 2022, "vigencia": "07/2022", "orcamento": 67752.87, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª E ÚNICA MEDIÇÃO", "medido": 67752.87, "ob": "OB 29/12/2022", "pago": "SIM"}]}, {"id": 3, "nome": "24º BPM (SEDE LUIS CORREIA-PI)", "processo": "00028.024603/2022-11", "contrato": "04 2022/2022", "ano": 2022, "vigencia": "08/2022", "orcamento": 78902.88, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 78902.88, "ob": "OB 29/12/2022", "pago": "SIM"}]}, {"id": 4, "nome": "BPTRAN", "processo": "00028.007148/2023-61", "contrato": "8 2022/2022", "ano": 2022, "vigencia": "03/2022", "orcamento": 167179.13, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 167179.13, "ob": "OB 10/04/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 92925.98, "ob": "OB 11/05/2023", "pago": "SIM"}]}, {"id": 5, "nome": "22° BPM(PROMORAR)", "processo": "00028.008527/2023-79", "contrato": "12 2022/2023", "ano": 2023, "vigencia": "03/2023", "orcamento": 58625.16, "status": "SUSPENSÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 58625.16, "ob": "OB 20/04/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 190887.23, "ob": "OB 11/11/2024", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 220979.5, "ob": "OB 20/02/2025", "pago": "SIM"}, {"seq": "4ª MEDIÇÃO", "medido": 339124.02, "ob": "OB 01/04/2025", "pago": "SIM"}, {"seq": "5ª MEDIÇÃO", "medido": 207028.5, "ob": "", "pago": "PENDENTE"}, {"seq": "6ª MEDIÇÃO", "medido": 204937.12, "ob": "", "pago": "PENDENTE"}]}, {"id": 6, "nome": "2 CIA DO 9° BPM(MOCAMBINHO)", "processo": "00028.008525/2023-80", "contrato": "14 2022/2023", "ano": 2023, "vigencia": "03/2023", "orcamento": 78383.06, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª E ÚNICA MEDIÇÃO", "medido": 78383.06, "ob": "OB 11/05/2023", "pago": "SIM"}]}, {"id": 7, "nome": "6° BPM", "processo": "00028.007152/2023-20", "contrato": "15 2022/2023", "ano": 2023, "vigencia": "03/2023", "orcamento": 134031.98, "status": "SUSPENSÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 134031.98, "ob": "OB 20/04/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": null, "ob": "OB 01/08/2024", "pago": "PENDENTE"}, {"seq": "3ª MEDIÇÃO", "medido": 254923.0, "ob": "", "pago": "PENDENTE"}]}, {"id": 8, "nome": "2° BPM (PARNAÍBA)", "processo": "00028.012520/2023-51", "contrato": "17 2022/2023", "ano": 2023, "vigencia": "04/2023", "orcamento": 45110.58, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 45110.58, "ob": "OB 11/05/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 440825.05, "ob": "OB 24/07/2023", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 127296.17, "ob": "", "pago": "PENDENTE"}]}, {"id": 9, "nome": "CEP/CEFAP", "processo": "00028.018503/2023-28", "contrato": "07 2022/2023", "ano": 2023, "vigencia": "06/2023", "orcamento": 701987.85, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 701987.85, "ob": "OB 21/07/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 667167.86, "ob": "OB 11/12/2023", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 279732.8, "ob": "OB 01/03/2024", "pago": "SIM"}, {"seq": "4ª MEDIÇÃO", "medido": null, "ob": "", "pago": "PENDENTE"}]}, {"id": 10, "nome": "PRESÍDIO", "processo": "00028.019244/2023-52", "contrato": "09 2022/2023", "ano": 2023, "vigencia": "06/2023", "orcamento": 396130.32, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 396130.32, "ob": "OB 10/07/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": null, "ob": "OB 07/05/2024", "pago": "PENDENTE"}]}, {"id": 11, "nome": "QCG(AUDITÓRIO)", "processo": "00028.020492/2023-46", "contrato": "18 2023/2023", "ano": 2023, "vigencia": "07/2023", "orcamento": 125950.48, "status": "EM ANDAMENTO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 125950.48, "ob": "OB 14/08/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 174765.66, "ob": "OB 06/11/2023", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": null, "ob": "OB 04/07/2024", "pago": "PENDENTE"}]}, {"id": 12, "nome": ".(QCG)-  TETO", "processo": "00028.027292/2023-14", "contrato": "31 2023/2023", "ano": 2023, "vigencia": "09/2023", "orcamento": 1029205.25, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 1029205.25, "ob": "OB 11/12/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 1092033.85, "ob": "OB 21/12/2023", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 690294.61, "ob": "OB 02/02/2024", "pago": "SIM"}]}, {"id": 13, "nome": "QCG PINTURA", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": []}, {"id": 14, "nome": "QCG - INSTALAÇÕES ELÉTRICAS", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": []}, {"id": 15, "nome": "3ª CIA/1º BPM(PORENQUANTO)", "processo": "00028.021719/2023-71", "contrato": "22 2023/2023", "ano": 2023, "vigencia": "07/2023", "orcamento": 230910.65, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 230910.65, "ob": "OB 01/12/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": null, "ob": "OB 10/05/2024", "pago": "PENDENTE"}]}, {"id": 16, "nome": "RPMONT", "processo": "00028.026042/2023-67", "contrato": "19 2023/2023", "ano": 2023, "vigencia": "08/2023", "orcamento": 277251.31, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 277251.31, "ob": "OB 01/12/2023", "pago": "SIM"}]}, {"id": 17, "nome": "GPM 2ªCIA/24 BPM(BARRA GRANDE)", "processo": "00028.025676/2023-01", "contrato": "27 2023/2023", "ano": 2023, "vigencia": "08/2023", "orcamento": 231324.11, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 231324.11, "ob": "OB 31/01/2024", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": null, "ob": "OB 03/05/2024", "pago": "PENDENTE"}, {"seq": "3ª MEDIÇÃO", "medido": null, "ob": "OB 12/09/2024", "pago": "PENDENTE"}]}, {"id": 18, "nome": "2 CIA/13 BPM(BOA HORA)", "processo": "00028.028321/2023-65", "contrato": "21 2023/2023", "ano": 2023, "vigencia": "09/2023", "orcamento": 383384.07, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 383384.07, "ob": "OB 22/07/2024", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 180140.55, "ob": "OB 04/07/2024", "pago": "SIM"}]}, {"id": 19, "nome": "27º BATALHÃO DE POLÍCIA MILITAR - PARNAÍBA - PI", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": []}, {"id": 20, "nome": "BOPAER", "processo": "00028.018678/2024-16", "contrato": "17 2024/2024", "ano": 2024, "vigencia": "05/2024", "orcamento": 220531.9, "status": "EM ANDAMENTO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 220531.9, "ob": "OB 04/07/2024", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 196211.77, "ob": "OB 29/10/2024", "pago": "SIM"}]}, {"id": 21, "nome": "PRÉDIO DA BANDA MUSICAL - CEFAP", "processo": "00028.018672/2024-49", "contrato": "18 2024/2024", "ano": 2024, "vigencia": "05/2024", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": null, "ob": "OB 30/08/2024", "pago": "PENDENTE"}, {"seq": "2ª MEDIÇÃO", "medido": 654415.68, "ob": "OB 11/11/2024", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 380073.07, "ob": "OB 22/11/2024", "pago": "SIM"}, {"seq": "4ª MEDIÇÃO", "medido": 315774.77, "ob": "OB 11/03/2025", "pago": "SIM"}, {"seq": "5ª MEDIÇÃO", "medido": 190378.31, "ob": "OB 28/03/2025", "pago": "SIM"}]}, {"id": 22, "nome": "CENTRO DE ASSISTÊNCIA INTEGRAL À SAÚDE - CAIS TERESINA", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": null, "ob": "OB 19/07/2024", "pago": "PENDENTE"}, {"seq": "2ª MEDIÇÃO", "medido": 280503.13, "ob": "OB 28/03/2025", "pago": "SIM"}]}, {"id": 23, "nome": "CENTRO DE ASSISTÊNCIA INTEGRAL À SAÚDE - CAIS PARNAÍBA", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": null, "ob": "OB 10/10/2024", "pago": "PENDENTE"}, {"seq": "2ª MEDIÇÃO", "medido": 288946.1, "ob": "OB 11/11/2024", "pago": "SIM"}]}, {"id": 24, "nome": "CPCOM", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "EM ANDAMENTO", "medicoes": []}, {"id": 25, "nome": "GUARITA", "processo": "00028.039353/2025-58", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 113295.84, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 113295.84, "ob": "—", "pago": "PENDENTE"}]}];
+
 let obras = [];
 let expandedIds = new Set();
 let modalCtx = null;
@@ -273,12 +257,10 @@ const fmt = v => v != null ? 'R$ ' + Number(v).toLocaleString('pt-BR', {minimumF
 const sClass = {'CONCLUÍDO':'b-con','EM ANDAMENTO':'b-and','SEM EVOLUÇÃO':'b-sem','SUSPENSÃO':'b-sus'};
 const pClass = {'SIM':'p-sim','PENDENTE':'p-pen','NÃO MEDIDO':'p-nao','AGUARDANDO':'p-ag'};
 
-const OBRAS_INICIAL = [{"id": 1, "nome": "BANHEIRO QCG", "processo": "00028.028822/2022-61", "contrato": "279/2022", "ano": 2022, "vigencia": "10/2022", "orcamento": 68285.92, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª E ÚNICA MEDIÇÃO", "medido": 68285.92, "ob": "OB 14/11/2022", "pago": "SIM"}]}, {"id": 2, "nome": "SALA DPL", "processo": "00028.020271/2022-97", "contrato": "03 2022/2022", "ano": 2022, "vigencia": "07/2022", "orcamento": 67752.87, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª E ÚNICA MEDIÇÃO", "medido": 67752.87, "ob": "OB 29/12/2022", "pago": "SIM"}]}, {"id": 3, "nome": "24º BPM (SEDE LUIS CORREIA-PI)", "processo": "00028.024603/2022-11", "contrato": "04 2022/2022", "ano": 2022, "vigencia": "08/2022", "orcamento": 78902.88, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 78902.88, "ob": "OB 29/12/2022", "pago": "SIM"}]}, {"id": 4, "nome": "BPTRAN", "processo": "00028.007148/2023-61", "contrato": "8 2022/2022", "ano": 2022, "vigencia": "03/2022", "orcamento": 167179.13, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 167179.13, "ob": "OB 10/04/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 92925.98, "ob": "OB 11/05/2023", "pago": "SIM"}]}, {"id": 5, "nome": "22° BPM(PROMORAR)", "processo": "00028.008527/2023-79", "contrato": "12 2022/2023", "ano": 2023, "vigencia": "03/2023", "orcamento": 58625.16, "status": "SUSPENSÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 58625.16, "ob": "OB 20/04/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 190887.23, "ob": "OB 11/11/2024", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 220979.5, "ob": "OB 20/02/2025", "pago": "SIM"}, {"seq": "4ª MEDIÇÃO", "medido": 339124.02, "ob": "OB 01/04/2025", "pago": "SIM"}, {"seq": "5ª MEDIÇÃO", "medido": 207028.5, "ob": "", "pago": "PENDENTE"}, {"seq": "6ª MEDIÇÃO", "medido": 204937.12, "ob": "", "pago": "PENDENTE"}]}, {"id": 6, "nome": "2 CIA DO 9° BPM(MOCAMBINHO)", "processo": "00028.008525/2023-80", "contrato": "14 2022/2023", "ano": 2023, "vigencia": "03/2023", "orcamento": 78383.06, "status": "CONCLUÍDO", "medicoes": [{"seq": "1ª E ÚNICA MEDIÇÃO", "medido": 78383.06, "ob": "OB 11/05/2023", "pago": "SIM"}]}, {"id": 7, "nome": "6° BPM", "processo": "00028.007152/2023-20", "contrato": "15 2022/2023", "ano": 2023, "vigencia": "03/2023", "orcamento": 134031.98, "status": "SUSPENSÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 134031.98, "ob": "OB 20/04/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": null, "ob": "OB 01/08/2024", "pago": "PENDENTE"}, {"seq": "3ª MEDIÇÃO", "medido": 254923.0, "ob": "", "pago": "PENDENTE"}]}, {"id": 8, "nome": "2° BPM (PARNAÍBA)", "processo": "00028.012520/2023-51", "contrato": "17 2022/2023", "ano": 2023, "vigencia": "04/2023", "orcamento": 45110.58, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 45110.58, "ob": "OB 11/05/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 440825.05, "ob": "OB 24/07/2023", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 127296.17, "ob": "", "pago": "PENDENTE"}]}, {"id": 9, "nome": "CEP/CEFAP", "processo": "00028.018503/2023-28", "contrato": "07 2022/2023", "ano": 2023, "vigencia": "06/2023", "orcamento": 701987.85, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 701987.85, "ob": "OB 21/07/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 667167.86, "ob": "OB 11/12/2023", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 279732.8, "ob": "OB 01/03/2024", "pago": "SIM"}, {"seq": "4ª MEDIÇÃO", "medido": null, "ob": "", "pago": "PENDENTE"}]}, {"id": 10, "nome": "PRESÍDIO", "processo": "00028.019244/2023-52", "contrato": "09 2022/2023", "ano": 2023, "vigencia": "06/2023", "orcamento": 396130.32, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 396130.32, "ob": "OB 10/07/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": null, "ob": "OB 07/05/2024", "pago": "PENDENTE"}]}, {"id": 11, "nome": "QCG(AUDITÓRIO)", "processo": "00028.020492/2023-46", "contrato": "18 2023/2023", "ano": 2023, "vigencia": "07/2023", "orcamento": 125950.48, "status": "EM ANDAMENTO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 125950.48, "ob": "OB 14/08/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 174765.66, "ob": "OB 06/11/2023", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": null, "ob": "OB 04/07/2024", "pago": "PENDENTE"}]}, {"id": 12, "nome": ".(QCG)-  TETO", "processo": "00028.027292/2023-14", "contrato": "31 2023/2023", "ano": 2023, "vigencia": "09/2023", "orcamento": 1029205.25, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 1029205.25, "ob": "OB 11/12/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 1092033.85, "ob": "OB 21/12/2023", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 690294.61, "ob": "OB 02/02/2024", "pago": "SIM"}]}, {"id": 13, "nome": "QCG PINTURA", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": []}, {"id": 14, "nome": "QCG - INSTALAÇÕES ELÉTRICAS", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": []}, {"id": 15, "nome": "3ª CIA/1º BPM(PORENQUANTO)", "processo": "00028.021719/2023-71", "contrato": "22 2023/2023", "ano": 2023, "vigencia": "07/2023", "orcamento": 230910.65, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 230910.65, "ob": "OB 01/12/2023", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": null, "ob": "OB 10/05/2024", "pago": "PENDENTE"}]}, {"id": 16, "nome": "RPMONT", "processo": "00028.026042/2023-67", "contrato": "19 2023/2023", "ano": 2023, "vigencia": "08/2023", "orcamento": 277251.31, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 277251.31, "ob": "OB 01/12/2023", "pago": "SIM"}]}, {"id": 17, "nome": "GPM 2ªCIA/24 BPM(BARRA GRANDE)", "processo": "00028.025676/2023-01", "contrato": "27 2023/2023", "ano": 2023, "vigencia": "08/2023", "orcamento": 231324.11, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 231324.11, "ob": "OB 31/01/2024", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": null, "ob": "OB 03/05/2024", "pago": "PENDENTE"}, {"seq": "3ª MEDIÇÃO", "medido": null, "ob": "OB 12/09/2024", "pago": "PENDENTE"}]}, {"id": 18, "nome": "2 CIA/13 BPM(BOA HORA)", "processo": "00028.028321/2023-65", "contrato": "21 2023/2023", "ano": 2023, "vigencia": "09/2023", "orcamento": 383384.07, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 383384.07, "ob": "OB 22/07/2024", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 180140.55, "ob": "OB 04/07/2024", "pago": "SIM"}]}, {"id": 19, "nome": "27º BATALHÃO DE POLÍCIA MILITAR - PARNAÍBA - PI", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": []}, {"id": 20, "nome": "BOPAER", "processo": "00028.018678/2024-16", "contrato": "17 2024/2024", "ano": 2024, "vigencia": "05/2024", "orcamento": 220531.9, "status": "EM ANDAMENTO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 220531.9, "ob": "OB 04/07/2024", "pago": "SIM"}, {"seq": "2ª MEDIÇÃO", "medido": 196211.77, "ob": "OB 29/10/2024", "pago": "SIM"}]}, {"id": 21, "nome": "PRÉDIO DA BANDA MUSICAL - CEFAP", "processo": "00028.018672/2024-49", "contrato": "18 2024/2024", "ano": 2024, "vigencia": "05/2024", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": null, "ob": "OB 30/08/2024", "pago": "PENDENTE"}, {"seq": "2ª MEDIÇÃO", "medido": 654415.68, "ob": "OB 11/11/2024", "pago": "SIM"}, {"seq": "3ª MEDIÇÃO", "medido": 380073.07, "ob": "OB 22/11/2024", "pago": "SIM"}, {"seq": "4ª MEDIÇÃO", "medido": 315774.77, "ob": "OB 11/03/2025", "pago": "SIM"}, {"seq": "5ª MEDIÇÃO", "medido": 190378.31, "ob": "OB 28/03/2025", "pago": "SIM"}]}, {"id": 22, "nome": "CENTRO DE ASSISTÊNCIA INTEGRAL À SAÚDE - CAIS TERESINA", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": null, "ob": "OB 19/07/2024", "pago": "PENDENTE"}, {"seq": "2ª MEDIÇÃO", "medido": 280503.13, "ob": "OB 28/03/2025", "pago": "SIM"}]}, {"id": 23, "nome": "CENTRO DE ASSISTÊNCIA INTEGRAL À SAÚDE - CAIS PARNAÍBA", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": null, "ob": "OB 10/10/2024", "pago": "PENDENTE"}, {"seq": "2ª MEDIÇÃO", "medido": 288946.1, "ob": "OB 11/11/2024", "pago": "SIM"}]}, {"id": 24, "nome": "CPCOM", "processo": "", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 0, "status": "EM ANDAMENTO", "medicoes": []}, {"id": 25, "nome": "GUARITA", "processo": "00028.039353/2025-58", "contrato": "—", "ano": null, "vigencia": "—", "orcamento": 113295.84, "status": "SEM EVOLUÇÃO", "medicoes": [{"seq": "1ª MEDIÇÃO", "medido": 113295.84, "ob": "—", "pago": "PENDENTE"}]}];
-
 function loadData() {
   const saved = localStorage.getItem('obras');
   if (!saved) {
-    obras = OBRAS_INICIAL;
+    obras = JSON.parse(JSON.stringify(OBRAS_INICIAL));
     saveData();
   } else {
     obras = JSON.parse(saved);
@@ -328,23 +310,20 @@ function renderContracts() {
     div.className = 'contract' + (isExp ? ' expanded' : '');
     div.id = 'obra-' + o.id;
     div.innerHTML = `
-      <div class="c-header" onclick="toggle('${o.id}')">
+      <div class="c-header" onclick="toggle(${o.id})">
         <span class="c-num">${o.id}</span>
         <svg class="c-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
         <span class="c-name">${o.nome}${hasPend ? ' <span style="color:var(--amber);font-size:10px;font-weight:600;margin-left:6px">● pendência</span>' : ''}</span>
         <div class="c-fin">
           <div class="c-fin-item">
             <span class="c-fin-lbl">Orçamento</span>
-            <span class="c-fin-val">${orcamento ? fmt(orcamento) : '<span style="color:var(--text-3)">Definir…</span>'}</span>
+            <span class="c-fin-val">${orcamento ? fmt(orcamento) : '<span style="color:var(--text-3)">—</span>'}</span>
           </div>
           <div class="c-fin-item">
             <span class="c-fin-lbl">Saldo</span>
             <span class="c-fin-val ${saldoClass}">${orcamento ? fmt(saldo) : '—'}</span>
           </div>
         </div>
-        <button class="btn" style="padding:3px 8px;font-size:11px;height:26px;flex-shrink:0" title="Editar obra" onclick="editObra(event,'${o.id}')">
-          <svg style="width:11px;height:11px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-        </button>
         <span class="badge ${sClass[o.status] || ''}">${o.status}</span>
       </div>
       <div class="c-body">
@@ -355,31 +334,21 @@ function renderContracts() {
             <th class="center">Ano</th>
             <th>Vigência</th>
             <th class="right">Medido</th>
-            <th>Ordem bancária</th>
+            <th>OB</th>
             <th class="center">Pago?</th>
-            <th class="center">Ação</th>
           </tr></thead>
           <tbody>
             ${(o.medicoes || []).map((m, mi) => `<tr>
-              <td><span style="color:var(--text-3);font-size:10px;font-family:var(--mono)">${o.processo || '<em style="color:var(--text-3)">Processo…</em>'}</span><br><span style="font-size:12px;font-weight:500">${m.seq} medição</span></td>
+              <td><span style="color:var(--text-3);font-size:10px;font-family:var(--mono)">${o.processo || '—'}</span><br><span style="font-size:12px;font-weight:500">${m.seq}</span></td>
               <td class="mono" style="font-size:11px">${o.contrato||'—'}</td>
               <td class="center mono" style="font-size:11px">${o.ano||'—'}</td>
               <td class="mono" style="font-size:11px">${o.vigencia||'—'}</td>
               <td class="right mono">${fmt(m.medido)}</td>
               <td>${m.ob}</td>
               <td class="center"><span class="pago-badge ${pClass[m.pago] || 'p-pen'}">${m.pago}</span></td>
-              <td class="center">
-                <button class="btn" style="padding:3px 8px;font-size:11px;height:26px" onclick="editMedicao('${o.id}',${mi})">
-                  <svg style="width:11px;height:11px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-                </button>
-              </td>
             </tr>`).join('')}
           </tbody>
         </table>
-        <div class="add-row" onclick="openModal('${o.id}')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          Adicionar medição
-        </div>
       </div>`;
     cont.appendChild(div);
   });
@@ -414,127 +383,16 @@ function buildSummary() {
 }
 
 function toggle(id) {
-  if (expandedIds.has(id)) expandedIds.delete(id);
-  else expandedIds.add(id);
-  renderContracts();
-}
-
-function openModal(obraId, medIdx) {
-  modalCtx = {obraId, medIdx};
-  const isNova = obraId === null;
-  const isEdit = medIdx !== undefined;
-  document.getElementById('modal-title').textContent = isNova ? 'Nova obra' : isEdit ? 'Editar medição' : 'Adicionar medição';
-  const o = isNova ? null : obras.find(x => x.id == obraId);
-  const m = isEdit ? o.medicoes[medIdx] : null;
-
-  if (isNova) {
-    document.getElementById('modal-sub').textContent = 'Cadastre uma nova unidade de manutenção';
-    document.getElementById('modal-fields').innerHTML = `
-      <div class="form-field full"><label class="form-label">Nome da unidade</label><input class="form-input" id="fi-nome" placeholder="Ex: 3° BPM"></div>
-      <div class="form-field full"><label class="form-label">Processo SEI</label><input class="form-input" id="fi-proc" placeholder="00028.000000/0000-00"></div>
-      <div class="form-field"><label class="form-label">Nº do Contrato</label><input class="form-input" id="fi-contrato" placeholder="001/2025"></div>
-      <div class="form-field"><label class="form-label">Ano</label><input class="form-input" id="fi-ano" type="number" placeholder="2025"></div>
-      <div class="form-field"><label class="form-label">Vigência</label><input class="form-input" id="fi-vigencia" placeholder="12/2025"></div>
-      <div class="form-field"><label class="form-label">Orçamento (R$)</label><input class="form-input" id="fi-orc" type="number" placeholder="0,00"></div>
-      <div class="form-field full"><label class="form-label">Status</label>
-        <select class="form-input" id="fi-status">
-          <option>CONCLUÍDO</option><option selected>EM ANDAMENTO</option><option>SEM EVOLUÇÃO</option><option>SUSPENSÃO</option>
-        </select>
-      </div>`;
+  const obra = document.getElementById('obra-' + id);
+  if (!obra) return;
+  
+  if (expandedIds.has(id)) {
+    expandedIds.delete(id);
+    obra.classList.remove('expanded');
   } else {
-    document.getElementById('modal-sub').textContent = o.nome;
-    const nextSeq = isEdit ? m.seq : (o.medicoes.length + 1) + 'ª';
-    document.getElementById('modal-fields').innerHTML = `
-      <div class="form-field full"><label class="form-label">Processo SEI</label><input class="form-input" id="fi-proc-med" value="${o.processo||''}" placeholder="00028.000000/0000-00"></div>
-      <div class="form-field"><label class="form-label">Nº da medição</label><input class="form-input" id="fi-seq" value="${isEdit ? m.seq : nextSeq}"></div>
-      <div class="form-field"><label class="form-label">Status pagamento</label>
-        <select class="form-input" id="fi-pago">
-          <option ${(m&&m.pago==='SIM')?'selected':''}>SIM</option>
-          <option ${(m&&m.pago==='PENDENTE')||!m?'selected':''}>PENDENTE</option>
-          <option ${(m&&m.pago==='NÃO MEDIDO')?'selected':''}>NÃO MEDIDO</option>
-          <option ${(m&&m.pago==='AGUARDANDO')?'selected':''}>AGUARDANDO</option>
-        </select>
-      </div>
-      <div class="form-field full"><label class="form-label">Valor medido (R$)</label><input class="form-input" id="fi-med" type="number" value="${isEdit&&m.medido!=null?m.medido:''}"></div>
-      <div class="form-field full"><label class="form-label">Ordem bancária (OB)</label><input class="form-input" id="fi-ob" value="${isEdit?m.ob:'—'}"></div>`;
+    expandedIds.add(id);
+    obra.classList.add('expanded');
   }
-  document.getElementById('modal').classList.add('open');
-}
-
-function closeModal() {
-  document.getElementById('modal').classList.remove('open');
-}
-
-function saveModal() {
-  const {obraId, medIdx, editObra: isEditObra} = modalCtx;
-  if (obraId === null) {
-    const nome = document.getElementById('fi-nome').value.trim();
-    if (!nome) return;
-    const newId = Math.max(...obras.map(o => o.id || 0), 0) + 1;
-    const newObra = {
-      id: newId, nome,
-      processo: document.getElementById('fi-proc').value.trim() || '—',
-      contrato: document.getElementById('fi-contrato').value.trim() || '—',
-      ano: parseInt(document.getElementById('fi-ano').value) || null,
-      vigencia: document.getElementById('fi-vigencia').value.trim() || '—',
-      orcamento: parseFloat(document.getElementById('fi-orc').value) || 0,
-      status: document.getElementById('fi-status').value,
-      medicoes: []
-    };
-    obras.push(newObra);
-  } else if (isEditObra) {
-    const o = obras.find(x => x.id == obraId);
-    o.nome = document.getElementById('fi-nome').value.trim() || o.nome;
-    o.processo = document.getElementById('fi-proc').value.trim() || '—';
-    o.contrato = document.getElementById('fi-contrato').value.trim() || '—';
-    o.ano = parseInt(document.getElementById('fi-ano').value) || null;
-    o.vigencia = document.getElementById('fi-vigencia').value.trim() || '—';
-    o.orcamento = parseFloat(document.getElementById('fi-orc').value) || 0;
-    o.status = document.getElementById('fi-status').value;
-  } else {
-    const o = obras.find(x => x.id == obraId);
-    const proc = document.getElementById('fi-proc-med') ? document.getElementById('fi-proc-med').value.trim() : null;
-    if (proc) o.processo = proc;
-    const med = {
-      seq: document.getElementById('fi-seq').value,
-      medido: document.getElementById('fi-med').value ? parseFloat(document.getElementById('fi-med').value) : null,
-      ob: document.getElementById('fi-ob').value,
-      pago: document.getElementById('fi-pago').value
-    };
-    if (medIdx !== undefined) o.medicoes[medIdx] = med;
-    else { expandedIds.add(obraId); o.medicoes.push(med); }
-  }
-  saveData();
-  closeModal();
-  renderContracts();
-}
-
-function editObra(e, obraId) {
-  e.stopPropagation();
-  const o = obras.find(x => x.id == obraId);
-  modalCtx = {obraId, editObra: true};
-  document.getElementById('modal-title').textContent = 'Editar obra';
-  document.getElementById('modal-sub').textContent = 'Atualize os dados da unidade';
-  document.getElementById('modal-fields').innerHTML = `
-    <div class="form-field full"><label class="form-label">Nome da unidade</label><input class="form-input" id="fi-nome" value="${o.nome}"></div>
-    <div class="form-field full"><label class="form-label">Processo SEI</label><input class="form-input" id="fi-proc" value="${o.processo||''}"></div>
-    <div class="form-field"><label class="form-label">Nº do Contrato</label><input class="form-input" id="fi-contrato" value="${o.contrato||''}"></div>
-    <div class="form-field"><label class="form-label">Ano</label><input class="form-input" id="fi-ano" type="number" value="${o.ano||''}"></div>
-    <div class="form-field"><label class="form-label">Vigência</label><input class="form-input" id="fi-vigencia" value="${o.vigencia||''}" placeholder="MM/AAAA"></div>
-    <div class="form-field"><label class="form-label">Orçamento (R$)</label><input class="form-input" id="fi-orc" type="number" value="${o.orcamento||''}"></div>
-    <div class="form-field full"><label class="form-label">Status</label>
-      <select class="form-input" id="fi-status">
-        <option ${o.status==='CONCLUÍDO'?'selected':''}>CONCLUÍDO</option>
-        <option ${o.status==='EM ANDAMENTO'?'selected':''}>EM ANDAMENTO</option>
-        <option ${o.status==='SEM EVOLUÇÃO'?'selected':''}>SEM EVOLUÇÃO</option>
-        <option ${o.status==='SUSPENSÃO'?'selected':''}>SUSPENSÃO</option>
-      </select>
-    </div>`;
-  document.getElementById('modal').classList.add('open');
-}
-
-function editMedicao(obraId, medIdx) {
-  openModal(obraId, medIdx);
 }
 
 function buildPendencias() {
@@ -549,7 +407,7 @@ function buildPendencias() {
         <td style="font-family:var(--mono)">${n}</td>
         <td>${o.nome}</td>
         <td style="font-size:10px;color:var(--text-3);font-family:var(--mono)">${o.processo}</td>
-        <td style="font-family:var(--mono)">${m.seq} medição</td>
+        <td style="font-family:var(--mono)">${m.seq}</td>
         <td class="right" style="font-family:var(--mono)">${fmt(m.medido)}</td>
         <td><span class="pago-badge ${pClass[m.pago]||'p-pen'}">${m.pago}</span></td>`;
       tbody.appendChild(tr);
@@ -569,7 +427,7 @@ function buildCharts() {
   new Chart(document.getElementById('chart-status'), {
     type: 'doughnut',
     data: {
-      labels: statusKeys.map(k => `${k} (${statusCounts[k]})`),
+      labels: statusKeys,
       datasets: [{
         data: statusKeys.map(k => statusCounts[k]),
         backgroundColor: Object.values(statusMap),
@@ -609,11 +467,15 @@ function buildCharts() {
   });
 }
 
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+}
+
 function exportCSV() {
   let rows = ['Obra;Processo;Status;Contrato;Ano;Vigência;Orçamento;Medição;Medido;OB;Pago'];
   obras.forEach(o => {
     (o.medicoes || []).forEach(m => {
-      rows.push([o.nome,o.processo||'',o.status,o.contrato||'',o.ano||'',o.vigencia||'',o.orcamento||0,m.seq+' medição',m.medido||'', m.ob, m.pago].join(';'));
+      rows.push([o.nome,o.processo||'',o.status,o.contrato||'',o.ano||'',o.vigencia||'',o.orcamento||0,m.seq,m.medido||'', m.ob, m.pago].join(';'));
     });
   });
   const blob = new Blob(['\uFEFF'+rows.join('\n')], {type:'text/csv;charset=utf-8'});
@@ -626,903 +488,6 @@ function exportCSV() {
 document.getElementById('modal').addEventListener('click', e => { if(e.target===document.getElementById('modal')) closeModal(); });
 
 loadData();
-</script>
-</body>
-</html>
-<style>
-:root {
-  --bg: #F5F4F0;
-  --surface: #FFFFFF;
-  --border: #E2E0D8;
-  --border-strong: #C8C5B8;
-  --text: #1A1916;
-  --text-2: #6B6860;
-  --text-3: #9E9B94;
-  --accent: #1C3F6E;
-  --accent-light: #E8EDF5;
-  --green: #1A5C3A;
-  --green-bg: #E8F5EE;
-  --amber: #7A4E00;
-  --amber-bg: #FFF4DC;
-  --red: #7A1E1E;
-  --red-bg: #FDEAEA;
-  --blue: #1C3F6E;
-  --blue-bg: #E8EDF5;
-  --radius: 6px;
-  --radius-lg: 10px;
-  --mono: 'IBM Plex Mono', monospace;
-  --sans: 'IBM Plex Sans', sans-serif;
-}
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: var(--sans); background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; }
-
-/* HEADER */
-.header {
-  background: var(--accent);
-  color: #fff;
-  padding: 0 28px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  height: 56px;
-  border-bottom: 2px solid #0f2844;
-}
-.header-logo {
-  width: 34px; height: 34px;
-  background: rgba(255,255,255,.15);
-  border-radius: var(--radius);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--mono); font-size: 13px; font-weight: 500; color: #fff;
-  flex-shrink: 0;
-}
-.header-title { font-size: 14px; font-weight: 600; letter-spacing: .01em; }
-.header-sub { font-size: 11px; color: rgba(255,255,255,.6); margin-top: 1px; }
-.header-right { margin-left: auto; font-size: 12px; color: rgba(255,255,255,.7); font-family: var(--mono); display: flex; align-items: center; gap: 12px; }
-.status-indicator { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; animation: pulse 2s infinite; }
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.5} }
-
-/* LAYOUT */
-.layout { display: flex; min-height: calc(100vh - 56px); }
-.sidebar {
-  width: 210px; flex-shrink: 0;
-  background: var(--surface);
-  border-right: 1px solid var(--border);
-  padding: 16px 0;
-}
-.sidebar-section { font-size: 10px; font-weight: 600; color: var(--text-3); letter-spacing: .08em; text-transform: uppercase; padding: 12px 16px 6px; }
-.nav-item {
-  display: flex; align-items: center; gap: 9px;
-  padding: 8px 16px; font-size: 13px; color: var(--text-2);
-  cursor: pointer; transition: background .12s, color .12s;
-  border-left: 2px solid transparent;
-}
-.nav-item svg { width: 16px; height: 16px; flex-shrink: 0; }
-.nav-item:hover { background: var(--bg); color: var(--text); }
-.nav-item.active { color: var(--accent); background: var(--accent-light); border-left-color: var(--accent); font-weight: 500; }
-
-/* MAIN */
-.main { flex: 1; overflow: auto; }
-.page { display: none; padding: 24px 28px; }
-.page.active { display: block; }
-.page-title { font-size: 18px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
-.page-sub { font-size: 12px; color: var(--text-3); margin-bottom: 20px; }
-
-/* SUMMARY CARDS */
-.summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 20px; }
-.sum-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 14px 16px; }
-.sum-lbl { font-size: 11px; color: var(--text-3); font-weight: 500; text-transform: uppercase; letter-spacing: .04em; }
-.sum-val { font-size: 17px; font-weight: 600; color: var(--text); margin-top: 5px; font-family: var(--mono); }
-.sum-val.neg { color: var(--red); }
-.sum-val.warn { color: var(--amber); }
-
-/* TOOLBAR */
-.toolbar { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
-.toolbar input, .toolbar select {
-  font-family: var(--sans); font-size: 13px;
-  border: 1px solid var(--border); border-radius: var(--radius);
-  background: var(--surface); color: var(--text);
-  padding: 7px 12px; height: 34px;
-  outline: none; transition: border-color .15s;
-}
-.toolbar input:focus, .toolbar select:focus { border-color: var(--accent); }
-.toolbar input { width: 220px; }
-.tb-count { font-size: 12px; color: var(--text-3); font-family: var(--mono); margin-left: auto; }
-.btn {
-  display: inline-flex; align-items: center; gap: 6px;
-  font-family: var(--sans); font-size: 13px; font-weight: 500;
-  padding: 7px 14px; border-radius: var(--radius); cursor: pointer;
-  border: 1px solid var(--border); background: var(--surface); color: var(--text);
-  height: 34px; transition: all .12s; text-decoration: none;
-}
-.btn:hover { border-color: var(--border-strong); background: var(--bg); }
-.btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-.btn-primary:hover { background: #163561; border-color: #163561; }
-.btn svg { width: 14px; height: 14px; }
-
-/* CONTRACTS */
-.contracts { display: flex; flex-direction: column; gap: 6px; }
-.contract { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color .15s; }
-.contract:hover { border-color: var(--border-strong); }
-.contract.expanded { border-color: var(--accent); }
-.c-header {
-  display: flex; align-items: center; gap: 10px;
-  padding: 12px 16px; cursor: pointer; user-select: none;
-}
-.c-num { font-family: var(--mono); font-size: 11px; color: var(--text-3); width: 22px; flex-shrink: 0; }
-.c-chevron { width: 16px; height: 16px; color: var(--text-3); transition: transform .2s; flex-shrink: 0; }
-.expanded .c-chevron { transform: rotate(90deg); }
-.c-name { font-size: 13px; font-weight: 500; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.c-fin { display:flex; align-items:center; gap:16px; flex-shrink:0; }
-.c-fin-item { display:flex; flex-direction:column; align-items:flex-end; }
-.c-fin-lbl { font-size:9px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:var(--text-3); }
-.c-fin-val { font-size:12px; font-weight:500; font-family:var(--mono); color:var(--text-2); }
-.c-fin-val.saldo-pos { color:var(--green); }
-.c-fin-val.saldo-neg { color:var(--red); }
-.badge {
-  font-size: 10px; font-weight: 600; padding: 2px 9px;
-  border-radius: 20px; white-space: nowrap; letter-spacing: .02em;
-}
-.b-con { background: var(--green-bg); color: var(--green); }
-.b-and { background: var(--blue-bg); color: var(--blue); }
-.b-sem { background: var(--amber-bg); color: var(--amber); }
-.b-sus { background: var(--red-bg); color: var(--red); }
-
-/* MEDICOES */
-.c-body { display: none; border-top: 1px solid var(--border); }
-.expanded .c-body { display: block; }
-.med-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-.med-table th {
-  background: var(--bg); color: var(--text-3);
-  font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
-  padding: 8px 14px; text-align: left; border-bottom: 1px solid var(--border);
-}
-.med-table td { padding: 9px 14px; border-bottom: 1px solid var(--border); color: var(--text); vertical-align: middle; }
-.med-table tr:last-child td { border-bottom: none; }
-.med-table .mono { font-family: var(--mono); font-size: 11px; }
-.med-table .right { text-align: right; }
-.med-table .center { text-align: center; }
-.pago-badge { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
-.p-sim { background: var(--green-bg); color: var(--green); }
-.p-pen { background: var(--amber-bg); color: var(--amber); }
-.p-nao { background: var(--red-bg); color: var(--red); }
-.p-ag  { background: var(--blue-bg); color: var(--blue); }
-
-.add-row {
-  display: flex; align-items: center; gap: 6px;
-  padding: 9px 16px; font-size: 12px; color: var(--accent);
-  cursor: pointer; font-weight: 500;
-  background: var(--accent-light); transition: background .12s;
-}
-.add-row:hover { background: #d6e0f0; }
-.add-row svg { width: 13px; height: 13px; }
-
-/* MODAL */
-.modal-backdrop {
-  display: none; position: fixed; inset: 0;
-  background: rgba(0,0,0,.35); z-index: 100;
-  align-items: center; justify-content: center;
-}
-.modal-backdrop.open { display: flex; }
-.modal {
-  background: var(--surface); border-radius: var(--radius-lg);
-  border: 1px solid var(--border-strong);
-  padding: 24px; width: 480px; max-width: 95vw;
-}
-.modal-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
-.modal-sub { font-size: 12px; color: var(--text-3); margin-bottom: 18px; }
-.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.form-field { display: flex; flex-direction: column; gap: 5px; }
-.form-field.full { grid-column: 1/-1; }
-.form-label { font-size: 11px; font-weight: 600; color: var(--text-2); letter-spacing: .03em; text-transform: uppercase; }
-.form-input {
-  font-family: var(--sans); font-size: 13px;
-  border: 1px solid var(--border); border-radius: var(--radius);
-  background: var(--bg); color: var(--text);
-  padding: 8px 10px; outline: none; transition: border-color .15s;
-}
-.form-input:focus { border-color: var(--accent); background: var(--surface); }
-.form-input select { width: 100%; }
-.modal-footer { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
-
-/* CHARTS */
-.charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
-.chart-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 16px; }
-.chart-title { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
-.chart-sub { font-size: 11px; color: var(--text-3); margin-bottom: 14px; }
-
-/* TABLE */
-.table-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
-.table-header { padding: 14px 16px; border-bottom: 1px solid var(--border); }
-.gen-table { width: 100%; border-collapse: collapse; font-size: 12px; }
-.gen-table th { background: var(--bg); color: var(--text-3); font-size: 10px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 8px 14px; text-align: left; border-bottom: 1px solid var(--border); }
-.gen-table td { padding: 9px 14px; border-bottom: 1px solid var(--border); color: var(--text); }
-.gen-table tr:last-child td { border-bottom: none; }
-
-/* POPOVER */
-.chart-popover {
-  position: fixed; z-index: 300;
-  background: var(--surface);
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 8px 32px rgba(0,0,0,.18);
-  min-width: 260px; max-width: 340px;
-  padding: 0; overflow: hidden;
-  pointer-events: auto;
-  display: none;
-}
-.chart-popover.visible { display: block; }
-.popover-header {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 10px 14px 8px;
-  border-bottom: 1px solid var(--border);
-}
-.popover-title { font-size: 12px; font-weight: 600; color: var(--text); }
-.popover-close {
-  width: 20px; height: 20px; border-radius: 4px;
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; color: var(--text-3); font-size: 14px;
-  transition: background .12s;
-}
-.popover-close:hover { background: var(--bg); color: var(--text); }
-.popover-list { max-height: 280px; overflow-y: auto; padding: 6px 0; }
-.popover-item {
-  display: flex; align-items: flex-start; gap: 8px;
-  padding: 7px 14px; font-size: 12px; color: var(--text);
-  border-bottom: 0.5px solid var(--border); cursor: pointer;
-  transition: background .1s;
-}
-.popover-item:last-child { border-bottom: none; }
-.popover-item:hover { background: var(--accent-light); }
-.popover-item-num { font-family: var(--mono); font-size: 10px; color: var(--text-3); flex-shrink:0; padding-top:1px; }
-.popover-item-name { flex: 1; line-height: 1.35; }
-.popover-item-badge { font-size: 9px; font-weight: 600; padding: 1px 6px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; margin-top: 1px; }
-
-/* EXPORT */
-.export-toast {
-  position: fixed; bottom: 20px; right: 20px;
-  background: var(--text); color: #fff;
-  font-size: 12px; padding: 10px 16px; border-radius: var(--radius);
-  opacity: 0; transition: opacity .3s; pointer-events: none; z-index: 200;
-}
-.export-toast.show { opacity: 1; }
-
-.editable-val {
-  cursor: pointer; border-bottom: 1px dashed var(--border-strong);
-  transition: color .12s;
-}
-.editable-val:hover { color: var(--accent) !important; border-bottom-color: var(--accent); }
-.inline-edit-input {
-  font-family: var(--mono); font-size: 12px;
-  border: 1px solid var(--accent); border-radius: var(--radius);
-  padding: 2px 6px; background: var(--surface); color: var(--text);
-  outline: none; width: 140px;
-}
-
-.loading { text-align: center; padding: 40px; color: var(--text-3); }
-.loading::before {
-  content: '';
-  display: inline-block;
-  width: 20px; height: 20px;
-  border: 2px solid var(--border);
-  border-top-color: var(--accent);
-  border-radius: 50%;
-  animation: spin .8s linear infinite;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-@keyframes spin { to { transform: rotate(360deg); } }
-</style>
-</head>
-<body>
-
-<div class="header">
-  <div class="header-logo">PM</div>
-  <div>
-    <div class="header-title">Gestão de Manutenção Predial</div>
-    <div class="header-sub">Comando PM-PI — Gestão 2022–2025</div>
-  </div>
-  <div class="header-right">
-    <span class="status-indicator" title="Sincronizando em tempo real"></span>
-    <span>Tempo real</span>
-  </div>
-</div>
-
-<div class="layout">
-  <nav class="sidebar">
-    <div class="sidebar-section">Principal</div>
-    <div class="nav-item active" onclick="nav('acomp', this)">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/><path d="M9 12h6M9 16h4"/></svg>
-      Acompanhamento
-    </div>
-    <div class="nav-item" onclick="nav('resumo', this)">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-      Resumo financeiro
-    </div>
-    <div class="nav-item" onclick="nav('pendencias', this)">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-      Pendências
-    </div>
-    <div class="sidebar-section" style="margin-top:8px">Sistema</div>
-    <div class="nav-item" onclick="exportCSV()">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-      Exportar CSV
-    </div>
-  </nav>
-
-  <main class="main">
-    <!-- ACOMPANHAMENTO -->
-    <div id="page-acomp" class="page active">
-      <div class="page-title">Acompanhamento de obras</div>
-      <div class="page-sub">Clique em uma unidade para expandir as medições</div>
-
-      <div class="summary" id="sum-acomp"></div>
-
-      <div class="toolbar">
-        <input type="text" id="search" placeholder="Buscar unidade ou processo…" oninput="renderContracts()">
-        <select id="fstatus" onchange="renderContracts()">
-          <option value="">Todos os status</option>
-          <option value="CONCLUÍDO">Concluídas</option>
-          <option value="EM ANDAMENTO">Em andamento</option>
-          <option value="SEM EVOLUÇÃO">Sem evolução</option>
-          <option value="SUSPENSÃO">Suspensas</option>
-        </select>
-        <select id="fpago" onchange="renderContracts()">
-          <option value="">Todos os pagamentos</option>
-          <option value="pendente">Com pendência de pagamento</option>
-        </select>
-        <select id="fano" onchange="renderContracts()">
-          <option value="">Todos os anos</option>
-          <option value="2022">2022</option>
-          <option value="2023">2023</option>
-          <option value="2024">2024</option>
-          <option value="2025">2025</option>
-        </select>
-        <span class="tb-count" id="tb-count"></span>
-        <button class="btn btn-primary" onclick="openModal(null)">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          Nova obra
-        </button>
-      </div>
-
-      <div class="contracts" id="contracts-list"></div>
-    </div>
-
-    <!-- RESUMO -->
-    <div id="page-resumo" class="page">
-      <div class="page-title">Resumo financeiro</div>
-      <div class="page-sub">Visão consolidada dos valores do contrato de manutenção predial</div>
-      <div class="summary" id="sum-resumo"></div>
-      <div class="charts-grid">
-        <div class="chart-card">
-          <div class="chart-title">Obras por status</div>
-          <div class="chart-sub">Distribuição das unidades — com nº de obras</div>
-          <div style="position:relative;height:240px"><canvas id="chart-status"></canvas></div>
-        </div>
-        <div class="chart-card">
-          <div class="chart-title">Obras por ano</div>
-          <div class="chart-sub">Quantidade de obras iniciadas por ano</div>
-          <div style="position:relative;height:240px"><canvas id="chart-ano-qtd"></canvas></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- PENDENCIAS -->
-    <div id="page-pendencias" class="page">
-      <div class="page-title">Pendências de pagamento</div>
-      <div class="page-sub">Medições sem confirmação de Ordem Bancária ou com pagamento pendente</div>
-      <div class="table-card">
-        <div class="table-header">
-          <div class="chart-title">Medições pendentes</div>
-          <div class="chart-sub">Medições registradas sem OB confirmada ou sem valor medido</div>
-        </div>
-        <table class="gen-table">
-          <thead><tr>
-            <th>#</th><th>Unidade</th><th>Processo</th><th>Medição</th>
-            <th class="right">Medido</th>
-            <th>Situação</th>
-          </tr></thead>
-          <tbody id="pend-body"></tbody>
-        </table>
-      </div>
-    </div>
-  </main>
-</div>
-
-<!-- POPOVER -->
-<div class="chart-popover" id="chart-popover">
-  <div class="popover-header">
-    <span class="popover-title" id="popover-title">Unidades</span>
-    <span class="popover-close" onclick="closePopover()">✕</span>
-  </div>
-  <div class="popover-list" id="popover-list"></div>
-</div>
-
-<!-- MODAL -->
-<div class="modal-backdrop" id="modal">
-  <div class="modal">
-    <div class="modal-title" id="modal-title">Adicionar medição</div>
-    <div class="modal-sub" id="modal-sub">Preencha os dados da nova medição</div>
-    <div class="form-grid" id="modal-fields"></div>
-    <div class="modal-footer">
-      <button class="btn" onclick="closeModal()">Cancelar</button>
-      <button class="btn btn-primary" onclick="saveModal()">Salvar</button>
-    </div>
-  </div>
-</div>
-
-<div class="export-toast" id="toast">CSV exportado com sucesso!</div>
-
-<script>
-// Configuração do Firebase
-const firebaseConfig = {
-  apiKey: 'seu_api_key_aqui',
-  authDomain: 'seu_project.firebaseapp.com',
-  projectId: 'seu_project_id',
-  storageBucket: 'seu_project.appspot.com',
-  messagingSenderId: 'seu_sender_id',
-  appId: 'seu_app_id'
-};
-
-// Inicializar Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const db = firebase.database(app);
-
-// Variáveis globais
-let obras = [];
-let expandedIds = new Set();
-let modalCtx = null;
-let chartsBuilt = false;
-
-const fmt = v => v != null ? 'R$ ' + Number(v).toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2}) : '—';
-const sClass = {'CONCLUÍDO':'b-con','EM ANDAMENTO':'b-and','SEM EVOLUÇÃO':'b-sem','SUSPENSÃO':'b-sus'};
-const pClass = {'SIM':'p-sim','PENDENTE':'p-pen','NÃO MEDIDO':'p-nao','AGUARDANDO':'p-ag'};
-const sBgPop = {'CONCLUÍDO':'#D1FAE5','EM ANDAMENTO':'#DBEAFE','SEM EVOLUÇÃO':'#FEF3C7','SUSPENSÃO':'#FEE2E2'};
-const sClPop = {'CONCLUÍDO':'#065F46','EM ANDAMENTO':'#1E40AF','SEM EVOLUÇÃO':'#92400E','SUSPENSÃO':'#991B1B'};
-
-// ----- INIT -----
-function init() {
-  // Carregar dados do Firebase em tempo real
-  db.ref('obras').on('value', (snapshot) => {
-    const data = snapshot.val();
-    obras = data ? Object.values(data) : [];
-    renderContracts();
-  }, (error) => {
-    console.error('Erro ao carregar dados:', error);
-    document.getElementById('contracts-list').innerHTML = '<div class="loading">Erro ao conectar com Firebase. Verifique suas credenciais.</div>';
-  });
-}
-
-// ----- NAVEGAÇÃO -----
-function nav(page, el) {
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  el.classList.add('active');
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + page).classList.add('active');
-  if (page === 'resumo') buildCharts();
-  if (page === 'pendencias') buildPendencias();
-}
-
-// ----- RENDERIZAÇÃO -----
-function renderContracts() {
-  const q = document.getElementById('search').value.toLowerCase();
-  const fs = document.getElementById('fstatus').value;
-  const fp = document.getElementById('fpago').value;
-  const fa = document.getElementById('fano').value;
-
-  let list = obras.filter(o => {
-    const mq = !q || o.nome.toLowerCase().includes(q) || (o.processo || '').includes(q);
-    const ms = !fs || o.status === fs;
-    const mp = !fp || (fp === 'pendente' && o.medicoes && o.medicoes.some(m => m.pago !== 'SIM'));
-    const ma = !fa || String(o.ano) === fa;
-    return mq && ms && mp && ma;
-  });
-
-  document.getElementById('tb-count').textContent = list.length + ' unidades';
-  const cont = document.getElementById('contracts-list');
-  cont.innerHTML = '';
-
-  list.forEach(o => {
-    const totalPago = (o.medicoes || []).reduce((a, m) => a + (m.pago === 'SIM' ? (m.medido || 0) : 0), 0);
-    const orcamento = o.orcamento || 0;
-    const saldo = orcamento - totalPago;
-    const saldoClass = saldo >= 0 ? 'saldo-pos' : 'saldo-neg';
-    const hasPend = o.medicoes && o.medicoes.some(m => m.pago !== 'SIM');
-    const isExp = expandedIds.has(o.id);
-    const div = document.createElement('div');
-    div.className = 'contract' + (isExp ? ' expanded' : '');
-    div.id = 'obra-' + o.id;
-    div.innerHTML = `
-      <div class="c-header" onclick="toggle('${o.id}')">
-        <span class="c-num">${o.id}</span>
-        <svg class="c-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-        <span class="c-name">${o.nome}${hasPend ? ' <span style="color:var(--amber);font-size:10px;font-weight:600;margin-left:6px">● pendência</span>' : ''}</span>
-        <div class="c-fin">
-          <div class="c-fin-item">
-            <span class="c-fin-lbl">Orçamento</span>
-            <span class="c-fin-val editable-val" title="Clique para editar orçamento" onclick="editInline(event,'${o.id}','orcamento')">${orcamento ? fmt(orcamento) : '<span style="color:var(--text-3)">Definir…</span>'}</span>
-          </div>
-          <div class="c-fin-item">
-            <span class="c-fin-lbl">Saldo</span>
-            <span class="c-fin-val ${saldoClass}">${orcamento ? fmt(saldo) : '—'}</span>
-          </div>
-        </div>
-        <button class="btn" style="padding:3px 8px;font-size:11px;height:26px;flex-shrink:0" title="Editar obra" onclick="editObra(event,'${o.id}')">
-          <svg style="width:11px;height:11px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-        </button>
-        <span class="badge ${sClass[o.status] || ''}">${o.status}</span>
-      </div>
-      <div class="c-body">
-        <table class="med-table">
-          <thead><tr>
-            <th>Processo / Medição</th>
-            <th>Contrato</th>
-            <th class="center">Ano</th>
-            <th>Vigência</th>
-            <th class="right">Medido</th>
-            <th>Ordem bancária</th>
-            <th class="center">Pago?</th>
-            <th class="center">Ação</th>
-          </tr></thead>
-          <tbody>
-            ${(o.medicoes || []).map((m, mi) => `<tr>
-              <td><span class="mono editable-val" style="color:var(--text-3);font-size:10px" title="Clique para editar processo" onclick="editInline(event,'${o.id}','processo')">${o.processo || '<em style="color:var(--text-3)">Processo…</em>'}</span><br><span style="font-size:12px;font-weight:500">${m.seq} medição</span></td>
-              <td class="mono" style="font-size:11px">${o.contrato||'—'}</td>
-              <td class="center mono" style="font-size:11px">${o.ano||'—'}</td>
-              <td class="mono" style="font-size:11px">${o.vigencia||'—'}</td>
-              <td class="right mono">${fmt(m.medido)}</td>
-              <td>${m.ob}</td>
-              <td class="center"><span class="pago-badge ${pClass[m.pago] || 'p-pen'}">${m.pago}</span></td>
-              <td class="center">
-                <button class="btn" style="padding:3px 8px;font-size:11px;height:26px" onclick="editMedicao('${o.id}',${mi})">
-                  <svg style="width:11px;height:11px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
-                </button>
-              </td>
-            </tr>`).join('')}
-          </tbody>
-        </table>
-        <div class="add-row" onclick="openModal('${o.id}')">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          Adicionar medição
-        </div>
-      </div>`;
-    cont.appendChild(div);
-  });
-
-  buildSummary();
-}
-
-function buildSummary() {
-  const total = obras.length;
-  const con = obras.filter(o => o.status === 'CONCLUÍDO').length;
-  const and = obras.filter(o => o.status === 'EM ANDAMENTO').length;
-  const sem = obras.filter(o => o.status === 'SEM EVOLUÇÃO').length;
-  const sus = obras.filter(o => o.status === 'SUSPENSÃO').length;
-  
-  document.getElementById('sum-acomp').innerHTML = `
-    <div class="sum-card"><div class="sum-lbl">Total de obras</div><div class="sum-val">${total}</div></div>
-    <div class="sum-card"><div class="sum-lbl">Concluídas</div><div class="sum-val">${con}</div></div>
-    <div class="sum-card"><div class="sum-lbl">Em andamento</div><div class="sum-val warn">${and}</div></div>
-    <div class="sum-card"><div class="sum-lbl">Sem evolução / suspensas</div><div class="sum-val neg">${sem + sus}</div></div>`;
-
-  const totMed = obras.reduce((a, o) => a + ((o.medicoes || []).reduce((m, med) => m + (med.pago === 'SIM' ? (med.medido || 0) : 0), 0)), 0);
-  const totOrc = obras.reduce((a, o) => a + (o.orcamento || 0), 0);
-  const saldo = totOrc - totMed;
-  
-  if (document.getElementById('sum-resumo')) {
-    document.getElementById('sum-resumo').innerHTML = `
-      <div class="sum-card"><div class="sum-lbl">Valor do contrato</div><div class="sum-val">${fmt(totOrc)}</div></div>
-      <div class="sum-card"><div class="sum-lbl">Total pago</div><div class="sum-val">${fmt(totMed)}</div></div>
-      <div class="sum-card"><div class="sum-lbl">Saldo</div><div class="sum-val ${saldo < 0 ? 'neg' : ''}">${fmt(saldo)}</div></div>
-      <div class="sum-card"><div class="sum-lbl">Taxa de execução</div><div class="sum-val">${totOrc ? ((totMed/totOrc)*100).toFixed(1) : '0'}%</div></div>`;
-  }
-}
-
-function toggle(id) {
-  if (expandedIds.has(id)) expandedIds.delete(id);
-  else expandedIds.add(id);
-  renderContracts();
-}
-
-// ----- MODAL -----
-function openModal(obraId, medIdx) {
-  modalCtx = {obraId, medIdx};
-  const isNova = obraId === null;
-  const isEdit = medIdx !== undefined;
-  document.getElementById('modal-title').textContent = isNova ? 'Nova obra' : isEdit ? 'Editar medição' : 'Adicionar medição';
-  const o = isNova ? null : obras.find(x => x.id == obraId);
-  const m = isEdit ? o.medicoes[medIdx] : null;
-
-  if (isNova) {
-    document.getElementById('modal-sub').textContent = 'Cadastre uma nova unidade de manutenção';
-    document.getElementById('modal-fields').innerHTML = `
-      <div class="form-field full"><label class="form-label">Nome da unidade</label><input class="form-input" id="fi-nome" placeholder="Ex: 3° BPM — Teresina"></div>
-      <div class="form-field full"><label class="form-label">Processo SEI</label><input class="form-input" id="fi-proc" placeholder="00028.000000/0000-00"></div>
-      <div class="form-field"><label class="form-label">Nº do Contrato</label><input class="form-input" id="fi-contrato" placeholder="001/2025"></div>
-      <div class="form-field"><label class="form-label">Ano</label><input class="form-input" id="fi-ano" type="number" placeholder="2025"></div>
-      <div class="form-field"><label class="form-label">Vigência</label><input class="form-input" id="fi-vigencia" placeholder="12/2025"></div>
-      <div class="form-field"><label class="form-label">Orçamento (R$)</label><input class="form-input" id="fi-orc" type="number" placeholder="0,00"></div>
-      <div class="form-field full"><label class="form-label">Status</label>
-        <select class="form-input" id="fi-status">
-          <option>CONCLUÍDO</option><option selected>EM ANDAMENTO</option><option>SEM EVOLUÇÃO</option><option>SUSPENSÃO</option>
-        </select>
-      </div>`;
-  } else {
-    document.getElementById('modal-sub').textContent = o.nome;
-    const nextSeq = isEdit ? m.seq : (o.medicoes.length + 1) + 'ª';
-    document.getElementById('modal-fields').innerHTML = `
-      <div class="form-field full"><label class="form-label">Processo SEI</label><input class="form-input" id="fi-proc-med" value="${o.processo||''}" placeholder="00028.000000/0000-00"></div>
-      <div class="form-field"><label class="form-label">Nº da medição</label><input class="form-input" id="fi-seq" value="${isEdit ? m.seq : nextSeq}"></div>
-      <div class="form-field"><label class="form-label">Status pagamento</label>
-        <select class="form-input" id="fi-pago">
-          <option ${(m&&m.pago==='SIM')?'selected':''}>SIM</option>
-          <option ${(m&&m.pago==='PENDENTE')||!m?'selected':''}>PENDENTE</option>
-          <option ${(m&&m.pago==='NÃO MEDIDO')?'selected':''}>NÃO MEDIDO</option>
-          <option ${(m&&m.pago==='AGUARDANDO')?'selected':''}>AGUARDANDO</option>
-        </select>
-      </div>
-      <div class="form-field full"><label class="form-label">Valor medido (R$)</label><input class="form-input" id="fi-med" type="number" value="${isEdit&&m.medido!=null?m.medido:''}"></div>
-      <div class="form-field full"><label class="form-label">Ordem bancária (OB)</label><input class="form-input" id="fi-ob" value="${isEdit?m.ob:'—'}"></div>`;
-  }
-  document.getElementById('modal').classList.add('open');
-}
-
-function closeModal() {
-  document.getElementById('modal').classList.remove('open');
-}
-
-function saveModal() {
-  const {obraId, medIdx, editObra: isEditObra} = modalCtx;
-  if (obraId === null) {
-    const nome = document.getElementById('fi-nome').value.trim();
-    if (!nome) return;
-    const newId = Math.max(...obras.map(o => o.id || 0), 0) + 1;
-    const newObra = {
-      id: newId, nome,
-      processo: document.getElementById('fi-proc').value.trim() || '—',
-      contrato: document.getElementById('fi-contrato').value.trim() || '—',
-      ano: parseInt(document.getElementById('fi-ano').value) || null,
-      vigencia: document.getElementById('fi-vigencia').value.trim() || '—',
-      orcamento: parseFloat(document.getElementById('fi-orc').value) || 0,
-      status: document.getElementById('fi-status').value,
-      medicoes: []
-    };
-    db.ref('obras/' + newId).set(newObra);
-  } else if (isEditObra) {
-    const o = obras.find(x => x.id == obraId);
-    o.nome = document.getElementById('fi-nome').value.trim() || o.nome;
-    o.processo = document.getElementById('fi-proc').value.trim() || '—';
-    o.contrato = document.getElementById('fi-contrato').value.trim() || '—';
-    o.ano = parseInt(document.getElementById('fi-ano').value) || null;
-    o.vigencia = document.getElementById('fi-vigencia').value.trim() || '—';
-    o.orcamento = parseFloat(document.getElementById('fi-orc').value) || 0;
-    o.status = document.getElementById('fi-status').value;
-    db.ref('obras/' + obraId).set(o);
-  } else {
-    const o = obras.find(x => x.id == obraId);
-    const proc = document.getElementById('fi-proc-med') ? document.getElementById('fi-proc-med').value.trim() : null;
-    if (proc) o.processo = proc;
-    const med = {
-      seq: document.getElementById('fi-seq').value,
-      medido: document.getElementById('fi-med').value ? parseFloat(document.getElementById('fi-med').value) : null,
-      ob: document.getElementById('fi-ob').value,
-      pago: document.getElementById('fi-pago').value
-    };
-    if (medIdx !== undefined) o.medicoes[medIdx] = med;
-    else { expandedIds.add(obraId); o.medicoes.push(med); }
-    db.ref('obras/' + obraId).set(o);
-  }
-  closeModal();
-}
-
-function editObra(e, obraId) {
-  e.stopPropagation();
-  const o = obras.find(x => x.id == obraId);
-  modalCtx = {obraId, editObra: true};
-  document.getElementById('modal-title').textContent = 'Editar obra';
-  document.getElementById('modal-sub').textContent = 'Atualize os dados da unidade';
-  document.getElementById('modal-fields').innerHTML = `
-    <div class="form-field full"><label class="form-label">Nome da unidade</label><input class="form-input" id="fi-nome" value="${o.nome}"></div>
-    <div class="form-field full"><label class="form-label">Processo SEI</label><input class="form-input" id="fi-proc" value="${o.processo||''}"></div>
-    <div class="form-field"><label class="form-label">Nº do Contrato</label><input class="form-input" id="fi-contrato" value="${o.contrato||''}"></div>
-    <div class="form-field"><label class="form-label">Ano</label><input class="form-input" id="fi-ano" type="number" value="${o.ano||''}"></div>
-    <div class="form-field"><label class="form-label">Vigência</label><input class="form-input" id="fi-vigencia" value="${o.vigencia||''}" placeholder="MM/AAAA"></div>
-    <div class="form-field"><label class="form-label">Orçamento (R$)</label><input class="form-input" id="fi-orc" type="number" value="${o.orcamento||''}"></div>
-    <div class="form-field full"><label class="form-label">Status</label>
-      <select class="form-input" id="fi-status">
-        <option ${o.status==='CONCLUÍDO'?'selected':''}>CONCLUÍDO</option>
-        <option ${o.status==='EM ANDAMENTO'?'selected':''}>EM ANDAMENTO</option>
-        <option ${o.status==='SEM EVOLUÇÃO'?'selected':''}>SEM EVOLUÇÃO</option>
-        <option ${o.status==='SUSPENSÃO'?'selected':''}>SUSPENSÃO</option>
-      </select>
-    </div>`;
-  document.getElementById('modal').classList.add('open');
-}
-
-function editMedicao(obraId, medIdx) {
-  openModal(obraId, medIdx);
-}
-
-function editInline(e, obraId, field) {
-  e.stopPropagation();
-  const o = obras.find(x => x.id == obraId);
-  const span = e.currentTarget;
-  const currentVal = field === 'orcamento' ? (o.orcamento || '') : (o.processo || '');
-  const inp = document.createElement('input');
-  inp.className = 'inline-edit-input';
-  inp.type = field === 'orcamento' ? 'number' : 'text';
-  inp.value = currentVal;
-  inp.style.width = field === 'orcamento' ? '130px' : '200px';
-  span.replaceWith(inp);
-  inp.focus(); inp.select();
-  function save() {
-    const val = inp.value.trim();
-    if (field === 'orcamento') o.orcamento = parseFloat(val) || 0;
-    else o.processo = val || '—';
-    db.ref('obras/' + obraId).set(o);
-  }
-  inp.addEventListener('blur', save);
-  inp.addEventListener('keydown', ev => { if(ev.key==='Enter') inp.blur(); if(ev.key==='Escape') inp.blur(); });
-}
-
-// ----- PENDENCIAS -----
-function buildPendencias() {
-  const tbody = document.getElementById('pend-body');
-  tbody.innerHTML = '';
-  let n = 0;
-  obras.forEach(o => {
-    (o.medicoes || []).filter(m => m.pago !== 'SIM').forEach(m => {
-      n++;
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td class="mono">${n}</td>
-        <td>${o.nome}</td>
-        <td class="mono" style="font-size:10px;color:var(--text-3)">${o.processo}</td>
-        <td class="mono">${m.seq} medição</td>
-        <td class="right mono">${fmt(m.medido)}</td>
-        <td><span class="pago-badge ${pClass[m.pago]||'p-pen'}">${m.pago}</span></td>`;
-      tbody.appendChild(tr);
-    });
-  });
-}
-
-// ----- CHARTS -----
-function buildCharts() {
-  if (chartsBuilt) return;
-  chartsBuilt = true;
-
-  const statusMap = {'CONCLUÍDO':'#1A5C3A','EM ANDAMENTO':'#1C3F6E','SEM EVOLUÇÃO':'#7A4E00','SUSPENSÃO':'#7A1E1E'};
-  const statusKeys = Object.keys(statusMap);
-  const statusCounts = {};
-  statusKeys.forEach(k => statusCounts[k] = obras.filter(o=>o.status===k).length);
-
-  new Chart(document.getElementById('chart-status'), {
-    type: 'doughnut',
-    data: {
-      labels: statusKeys.map(k => `${k} (${statusCounts[k]})`),
-      datasets: [{
-        data: statusKeys.map(k => statusCounts[k]),
-        backgroundColor: Object.values(statusMap),
-        borderWidth: 3, borderColor: '#fff'
-      }]
-    },
-    options: { responsive:true, maintainAspectRatio:false, cutout:'55%',
-      plugins: {
-        legend: { position:'bottom', labels:{ font:{size:11}, boxWidth:10, padding:10, color:'#6B6860' }},
-        tooltip: { callbacks: { label: ctx => ` ${ctx.label}: ${ctx.raw} obra(s)` }}
-      },
-      onClick: (evt, elements) => {
-        if (!elements.length) return;
-        const idx = elements[0].index;
-        const key = statusKeys[idx];
-        const list = obras.filter(o => o.status === key);
-        showPopover(evt.native, `${key} — ${list.length} obra(s)`, list, 'status');
-      }
-    }
-  });
-
-  const anos = [...new Set(obras.map(o=>o.ano).filter(Boolean))].sort();
-  const anoColors = ['#B5D4F4','#1C3F6E','#7A9CC8','#3B6D11'];
-  new Chart(document.getElementById('chart-ano-qtd'), {
-    type:'bar',
-    data:{
-      labels: anos.map(String),
-      datasets:[{
-        label:'Obras',
-        data: anos.map(a => obras.filter(o=>o.ano===a).length),
-        backgroundColor: anos.map((_,i) => anoColors[i % anoColors.length]),
-        borderRadius:4
-      }]
-    },
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},
-        tooltip:{callbacks:{label:ctx=>` ${ctx.raw} obras`}}
-      },
-      onClick: (evt, elements) => {
-        if (!elements.length) return;
-        const idx = elements[0].index;
-        const ano = anos[idx];
-        const list = obras.filter(o => o.ano === ano);
-        showPopover(evt.native, `Obras de ${ano} — ${list.length} unidade(s)`, list, 'ano');
-      },
-      scales:{
-        x:{ticks:{font:{size:12},color:'#6B6860'},grid:{display:false}},
-        y:{ticks:{stepSize:1,font:{size:10},color:'#9E9B94'},grid:{color:'rgba(0,0,0,.05)'}}
-      }
-    }
-  });
-}
-
-// ----- POPOVER -----
-function showPopover(nativeEvent, title, list, mode) {
-  const pop = document.getElementById('chart-popover');
-  document.getElementById('popover-title').textContent = title;
-  const ul = document.getElementById('popover-list');
-  ul.innerHTML = list.map((o,i) => `
-    <div class="popover-item" onclick="goToObra(${o.id})">
-      <span class="popover-item-num">${String(i+1).padStart(2,'0')}</span>
-      <span class="popover-item-name">${o.nome}</span>
-      ${mode==='ano'
-        ? `<span class="popover-item-badge" style="background:${sBgPop[o.status]};color:${sClPop[o.status]}">${o.status}</span>`
-        : `<span class="popover-item-badge" style="background:#E8EDF5;color:#1C3F6E;font-family:var(--mono)">${o.ano||'—'}</span>`
-      }
-    </div>`).join('');
-
-  const vw = window.innerWidth, vh = window.innerHeight;
-  let x = nativeEvent.clientX + 12, y = nativeEvent.clientY + 12;
-  pop.classList.add('visible');
-  const pw = pop.offsetWidth, ph = pop.offsetHeight;
-  if (x + pw > vw - 12) x = nativeEvent.clientX - pw - 12;
-  if (y + ph > vh - 12) y = nativeEvent.clientY - ph - 12;
-  pop.style.left = x + 'px';
-  pop.style.top  = y + 'px';
-}
-
-function closePopover() {
-  document.getElementById('chart-popover').classList.remove('visible');
-}
-
-function goToObra(id) {
-  closePopover();
-  document.querySelectorAll('.nav-item').forEach((el,i) => el.classList.toggle('active', i===0));
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-acomp').classList.add('active');
-  expandedIds.add(id);
-  renderContracts();
-  setTimeout(() => {
-    const el = document.getElementById('obra-'+id);
-    if (el) el.scrollIntoView({behavior:'smooth', block:'center'});
-  }, 100);
-}
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    const pop = document.getElementById('chart-popover');
-    if (pop && pop.classList.contains('visible')) {
-      closePopover();
-      e.preventDefault();
-    }
-  }
-});
-
-// ----- EXPORT -----
-function exportCSV() {
-  let rows = ['Obra;Processo;Status;Contrato;Ano;Vigência;Orçamento;Medição;Medido;OB;Pago'];
-  obras.forEach(o => {
-    (o.medicoes || []).forEach(m => {
-      rows.push([o.nome,o.processo||'',o.status,o.contrato||'',o.ano||'',o.vigencia||'',o.orcamento||0,m.seq+' medição',m.medido||'', m.ob, m.pago].join(';'));
-    });
-  });
-  const blob = new Blob(['\uFEFF'+rows.join('\n')], {type:'text/csv;charset=utf-8'});
-  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-  a.download = 'manutencao_pmpi.csv'; a.click();
-  const t = document.getElementById('toast'); t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'), 2500);
-}
-
-document.getElementById('modal').addEventListener('click', e => { if(e.target===document.getElementById('modal')) closeModal(); });
-
-// Init
-init();
 </script>
 </body>
 </html>
