@@ -1,0 +1,9 @@
+{
+  "name": "gestao-manutencao-pmpi",
+  "version": "1.0.0",
+  "description": "Sistema de gestão de manutenção predial",
+  "main": "index.html",
+  "keywords": ["manutencao", "gestao", "pmpi"],
+  "author": "",
+  "license": "MIT"
+}
